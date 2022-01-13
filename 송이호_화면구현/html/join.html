@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>main.html</title>
+    <style>
+        *{
+            background-color: seashell;
+        }
+
+        div.container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 1200px;
+            height: 900px;
+            margin: 20px auto;
+            justify-content: space-between;
+        }
+
+        header{
+            height: 120px;
+        }
+        #title{
+            font-size: 40px;
+        }
+        div.aa{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            text-align: center;
+            justify-content: space-between;
+        }
+        div.bb a:hover{
+            color: #F90;
+	        text-decoration:underline;
+        }
+        #logo{ 
+            margin: 20px;
+            cursor: pointer;
+            text-align: left;
+            height: 140px;
+            opacity: 80%;
+        }
+        div.bb{
+            display: block;
+            padding-right: 100px;
+            text-align: right;
+        }
+        
+        footer{
+            height: 100px;
+        }
+
+        nav{
+            width: 1200px;
+            height: 50px;
+        }
+        ul.navc{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        ul.navc :hover{
+            color: #F90;
+	        text-decoration:underline;
+        }
+        section{
+            width: 1200px;
+            height: 520px;
+            text-align: left;
+            
+        }
+        div.container2{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+        }
+        #joinwindow{
+            margin-left: 20%;
+        }
+        #vistor{
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="aa">
+                <input type="image" src="..\images\logo.jpg" alt="빈칸" id="logo">
+                <h1 id="title">Busan Tour</h1>
+                <div class="bb">
+                    <a href="http://127.0.0.1:5500/html/login.html" target="_self">로그인</a>
+                    <a href="http://127.0.0.1:5500/html/join.html" target="_self">회원가입</a>
+                </div>
+                
+            </div>
+        </header>
+        <nav>
+            <ul class="navc" style="list-style-type: none;">
+                <li><a href="http://127.0.0.1:5500/html/main.html" target="_self">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/html/aboutus.html" target="_self">About us</a></li>
+                <li>Blog</li>
+                <li>Recommandation</li>
+                <li>Attraction</li>
+            </ul>
+            <hr>
+        </nav>
+         <section>
+            <div class="container2">
+                <ul id="vistor">
+                    <h2>VISTOR</h2>
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                    <li>나의정보</li>
+                    <li>고객정보</li>
+                    <li>개인정보</li>
+                </ul>
+                
+                <fieldset id="joinwindow">
+                    <form action="" method="get">
+                        <legend>
+                            <h1>개인 정보 입력</h1>
+                        </legend>
+                        <p>
+                            <label>아 이 디:</label>
+                            <input type="text" required autofocus>
+                            <input id="bu" type="button" value="ID중복검사" >
+                        </p>
+                        <p>
+                            <label>비밀번호</label>
+                            <input type="password" name="pw" id="passw" onclick="func4();">
+                           
+                        </p>
+                        <p>
+                            <label>생년월일:</label>
+                            <input type="date" required>
+                        </p>
+                        <p>
+                            <label>성 별:</label>
+                            <input id="gen" type="radio" name="gender" value="male">
+                            남성
+                            <input id="gen" type="radio" name="gender" value="female">
+                            여성
+                            <br>
+                        </p>
+                        <p>
+                            <label>E-MAIL:</label>
+                            <input type="email" required>
+                            <br>
+                        </p>
+                        <p>
+                            <label>메일수신:</label>
+                            <input id="gen" type="radio" name="mail" value="agree">
+                            "수신동의"
+                            <input id="gen" type="radio" name="mail" value="disagree">
+                            "수신거부"
+                            <br>
+                        </p>
+                        <p>
+                            <label>핸드폰:</label>
+                            <select>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="051">051</option>
+                            </select>
+                            - 
+                            <input id="add" type="text">
+                            -
+                            <input id="add" type="text">
+                            <br>
+                        </p>
+                        <p>
+                            <label>직업:</label>
+                            <select name="job">
+                                <option value="학생">학생</option>
+                                <option value="회사원">회사원</option>
+                                <option value="백수">백수</option>
+                                <option value="전문직">전문직</option>
+                            </select>
+                            <br>
+                        </p>
+                        <p>
+                            <label>취미:</label>
+                            <input type="checkbox" name="hobby" id="check">
+                            쇼핑
+                            <input type="checkbox" name="hobby" id="check">
+                            인터넷
+                            <input type="checkbox" name="hobby" id="check">
+                            음악감상
+                            <input type="checkbox" name="hobby" id="check">
+                            독서
+                            <input type="checkbox" name="hobby" id="check">
+                            스포츠
+                        </p>
+                        <p>
+                            <label>자기소개:</label>
+                            <textarea cols="50" rows="5"></textarea>
+                        </p>
+                    </form>
+            
+                </fieldset>
+            </div>
+            <hr>
+         </section>
+        
+        <footer>
+            <h4>All contents Copyright &copy; 2022 BusanTour Inc. all rights reserved
+                Contact mail : BusanTour@busatour.com </h4>
+        </footer>
+    </div>
+    <script>
+                              
+        function func4(){
+            alert('숫자 영문 조합 10자리');
+        }
+      
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+

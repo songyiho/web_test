@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>main.html</title>
+    <style>
+        *{
+            background-color: seashell;
+        }
+
+        div.container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 1200px;
+            height: 900px;
+            margin: 20px auto;
+            justify-content: space-between;
+        }
+
+        header{
+            height: 120px;
+        }
+        #title{
+            font-size: 40px;
+        }
+        div.aa{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            text-align: center;
+            justify-content: space-between;
+        }
+        div.bb a:hover{
+            color: #F90;
+	        text-decoration:underline;
+        }
+        #logo{ 
+            margin: 20px;
+            cursor: pointer;
+            text-align: left;
+            height: 140px;
+            opacity: 80%;
+        }
+        div.bb{
+            display: block;
+            padding-right: 100px;
+            text-align: right;
+        }
+        
+        footer{
+            height: 100px;
+        }
+
+        nav{
+            width: 1200px;
+            height: 50px;
+        }
+        ul.navc{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        ul.navc :hover{
+            color: #F90;
+	        text-decoration:underline;
+        }
+        section{
+            width: 1200px;
+            height: 520px;
+            text-align: left;
+            
+        }
+        div.container2{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+        }
+        #article{
+            margin-left: 20%;
+        }
+        .visitor{
+            cursor: pointer;
+        }
+      
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="aa">
+                <input type="image" src="..\images\logo.jpg" alt="빈칸" id="logo">
+                <h1 id="title">Busan Tour</h1>
+                <div class="bb">
+                    <a href="http://127.0.0.1:5500/html/login.html" target="_self">로그인</a>
+                    <a href="http://127.0.0.1:5500/html/join.html" target="_self">회원가입</a>
+                </div>
+                
+            </div>
+        </header>
+        <nav>
+            <ul class="navc" style="list-style-type: none;">
+                <li><a href="http://127.0.0.1:5500/html/main.html" target="_self">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/html/aboutus.html" target="_self">About us</a></li>
+                <li>Blog</li>
+                <li>Recommandation</li>
+                <li>Attraction</li>
+            </ul>
+            <hr>
+        </nav>
+         <section>
+            <div class="container2">
+                <ul class="visitor" style="list-style-type: none;">
+                    <h2>VISTOR</h2>
+                    <li>로그인</li>
+                    <li>회원가입</li>
+                    <li>나의정보</li>
+                    <li>고객정보</li>
+                    <li>개인정보</li>
+                </ul>
+                <article id="article">
+                    <h2>About us</h2>
+                    <hr>
+                    <p>BusanTour는 2022년 1월 11일에 설립하였다. 부산광역시의 관광명소를 소개하는데
+                        그 목적이 있다.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </article>
+            </div>
+            <hr>
+         </section>
+        
+        <footer>
+            <h4>All contents Copyright &copy; 2022 BusanTour Inc. all rights reserved
+                Contact mail : BusanTour@busatour.com </h4>
+        </footer>
+    </div>
+    <script>
+                              
+        function func4(){
+            alert('숫자 영문 조합 10자리');
+        }
+      
+    </script>
+    
+</body>
+</html>
